@@ -208,9 +208,9 @@ source_code = HtmlFile.read()
 components.html(source_code, width=600, height = 600)
 
 st.write("Customer spend analytics clustered based on three PCA's")
-st.markdown("Yellow (Low income area) - Low income, low spending, wide age range with majority above 40+")
-st.markdown("Red (Affluent neighborhood) - High income, low spending, median age 40/50")
-st.markdown("Purple (Student group) - Low income, high spending, low age")
+st.markdown("- Yellow (Low income area) - Low income, low spending, wide age range with majority above 40+")
+st.markdown("- Red (Affluent neighborhood) - High income, low spending, median age 40/50")
+st.markdown("- Purple (Student group) - Low income, high spending, low age")
 
 st.plotly_chart(ch.clusterSpecificProduct(groupedProductData, 0), use_container_width = False, height = 300, width = 150)
 
