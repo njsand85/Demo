@@ -205,7 +205,7 @@ st.write("Customer spend analytics clustered based on three PCA's")
 HtmlFile = open("test.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read() 
 #print(source_code)
-components.html(source_code, width=600)
+components.html(source_code, width=600, height=400)
 
 st.write("Customer spend analytics clustered based on three PCA's")
 st.markdown("- Yellow (Low income area) - Low income, low spending, wide age range with majority above 40+")
